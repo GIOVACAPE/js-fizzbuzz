@@ -1,11 +1,14 @@
 
+const container = document.querySelector('main');
 
 
-
-for (let i = 1; i <= 100; i += 1 ) {                       // CONTEGGIO da 1 a 100 con FOR
+for (let i = 1; i <= 100; i += 1 ) {                                               // CONTEGGIO da 1 a 100 con FOR
     
-    if (i % 3 == 0 && i % 5 == 0){                         //se multiplo di 3
-        console.log('FizzBuzz');                           //STAMPO FIZZ
+    if (i % 3 == 0 && i % 5 == 0){                                                //se multiplo di 3
+        console.log('FizzBuzz');                                                  //STAMPO FIZZ
+        const newElement = document.createElement('div');
+        newElement.innerHTML = 'FizzBuzz';
+        container.append(newElement);                      
     }
     else if (i % 5 == 0) {                                 //se multiplo di 5?
         console.log('Buzz');                               // STAMPO BUZZ
